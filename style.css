@@ -45,7 +45,7 @@ h2 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 5px solid #ffd700; /* Gold border */
+  border: 1px solid black; /* Gold border */
   float: left;
   shape-outside: circle();
   margin-right: 20px;
@@ -70,4 +70,22 @@ footer {
 
 a {
   color: #32cd32; /* Lime Green */
+}
+
+.ascii-donut {
+  font-family: monospace;
+  white-space: pre;
+  position: absolute;
+  top: 10px;
+  font-size: 12px;
+  line-height: 12px;
+  color: red;
+}
+
+.left-donut {
+  left: 10px;
+}
+
+.right-donut {
+  right: 10px;
 }

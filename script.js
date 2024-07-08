@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 const chars = ".,-~:;=!*#$@"; // Characters for shading
         const R1 = 10;
         const R2 = 20;
@@ -52,7 +53,7 @@ const chars = ".,-~:;=!*#$@"; // Characters for shading
             A += 0.15;
             B += 0.035;
             hue += 0.005;
-            setTimeout(updateDonut, 50); // Adjust the speed as needed
+            setTimeout(updateDonut, 70); // Adjust the speed as needed
         }
 
-        updateDonut();
+        updateDonut()});
