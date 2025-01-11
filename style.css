@@ -2,44 +2,84 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background-color: #000000;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
+
 }
+
+/* The grid is fixed to cover the entire screen behind the content */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fit, 70px); /* Adjust number of columns */
+  grid-auto-rows: 70px; /* Adjust the size of each tile */
+  position: fixed; /* Fixed behind the content */
+  top: 0;
+  left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
+  z-index: -1; /* Ensure it stays behind content */
+  pointer-events: none; /* Prevent the grid from blocking interactions */
 }
 
+/* Style for each cell in the tessellation grid */
 .grid-cell {
-  aspect-ratio: 1; /* Ensures square cells */
-  border: 1px solid #333;
-  background-color: #111;
-  transition: background-color 0.3s, box-shadow 0.3s;
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 70px;
+  height: 70px;
+  margin: 0px;
+  background-color: #000;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto; /* Allow interaction on the individual tiles */
+}
+.grid-cell:nth-child(odd) {
+  transform: translateX(0px); /* Half the width of a circle */
+}
+/* Hover effects for tessellation */
+.grid-cell:hover {
+  background-color: #15ff00;
+  transform: scale(1.0); /* Slightly enlarge on hover */
+  transition: background-color 3s ease, transform 3s ease;
+}
+.grid-cell {
+  transition: transform 6s ease, background-color 15s ease;
 }
 
-.grid-cell.active {
-  background-color: #4caf50;
-  box-shadow: 0 0 15px 5px rgba(76, 175, 80, 0.75);
+.grid-cell:hover {
+  transition: background-color 0.3s ease, transform 20s ease;
 }
-
+/* Header with transparent background and pointer-events none */
 header {
   text-align: center;
   padding: 50px 0;
-  background-color: #1f1f1f;
+  background-color: transparent; /* Make background transparent */
+  position: relative;
+  z-index: 2; /* Ensure header stays above the grid */
+  color: #ffffff; /* Ensure text is visible */
+  pointer-events: none; /* Allow hover to pass through */
 }
 
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for better contrast */
+}
+
+/* Ensure the links inside the header are interactive */
+header a {
+  pointer-events: auto; /* Enable interaction on the links */
 }
 
 nav {
   text-align: center;
   padding: 10px 0;
   background-color: #282828;
+  position: relative;
+  z-index: 2;
 }
 
 nav a {
@@ -54,13 +94,14 @@ section {
   margin: 20px;
   background-color: #1e1e1e;
   border-radius: 8px;
+  position: relative;
+  z-index: 2;
 }
 
 h2 {
   border-bottom: 2px solid #444;
   padding-bottom: 10px;
 }
-
 .about-me img {
   width: 150px;
   height: 150px;
@@ -82,30 +123,11 @@ sh1 {
   color: #1e90ff;
 }
 
+
 footer {
   text-align: center;
   padding: 20px 0;
   background-color: #1f1f1f;
-}
-
-a {
-  color: #32cd32; /* Lime Green */
-}
-
-.ascii-donut {
-  font-family: monospace;
-  white-space: pre;
-  position: absolute;
-  top: 10px;
-  font-size: 12px;
-  line-height: 12px;
-  color: red;
-}
-
-.left-donut {
-  left: 10px;
-}
-
-.right-donut {
-  right: 10px;
+  position: relative;
+  z-index: 2;
 }
