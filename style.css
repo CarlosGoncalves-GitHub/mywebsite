@@ -1,14 +1,10 @@
 /* styles.css */
-body, html {
+body {
   margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
