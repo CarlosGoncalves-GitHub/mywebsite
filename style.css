@@ -21,6 +21,7 @@ body, html {
   border: 1px solid #333;
   background-color: #111;
   transition: background-color 0.3s, box-shadow 0.3s;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .grid-cell.active {
