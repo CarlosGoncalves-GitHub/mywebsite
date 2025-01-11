@@ -1,4 +1,3 @@
-// script.js
 const container = document.querySelector('.grid-container');
 const rows = 65; // Adjust number of rows
 const cols = 65; // Adjust number of columns
