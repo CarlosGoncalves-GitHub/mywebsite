@@ -1,8 +1,31 @@
-body {
+/* styles.css */
+body, html {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  width: 100vw;
+  height: 100vh;
+}
+
+.grid-cell {
+  aspect-ratio: 1; /* Ensures square cells */
+  border: 1px solid #333;
+  background-color: #111;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.grid-cell.active {
+  background-color: #4caf50;
+  box-shadow: 0 0 15px 5px rgba(76, 175, 80, 0.75);
 }
 
 header {

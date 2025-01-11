@@ -57,3 +57,21 @@ const chars = ".,-~:;=!*#$@"; // Characters for shading
         }
 
         updateDonut()});
+
+
+
+const container = document.querySelector('.grid-container');
+const rows = 20; // Number of rows
+const cols = 20; // Number of columns
+
+// Generate the grid dynamically
+for (let i = 0; i < rows * cols; i++) {
+  const cell = document.createElement('div');
+  cell.classList.add('grid-cell');
+  container.appendChild(cell);
+
+  // Add click event to toggle the glow effect
+  cell.addEventListener('click', () => {
+    cell.classList.toggle('active');
+  });
+}
