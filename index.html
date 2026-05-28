@@ -1,113 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Henry Mendes Goncalves</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Goncalves — Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-    <div class="grid-container"></div>
 
-    <header>
-        <h1>Carlos Henry Mendes Goncalves</h1>
-    </header>
+  
+  <div class="grid-bg"></div>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about" class="about-me">
-        <h2>About Me</h2>
-        <img src="me.jpg" alt="Carlos Henry Mendes Goncalves">
-        <p>Hello! My name is Carlos Henry Mendes Goncalves. I am a graduate from the University of Westminster with a degree in Digital Media Development. I have recently completed a training program in Production Support with SRE and finished a 2-month internship at APG E-Commerce as an API Developer. I am passionate about technology and always eager to learn and grow in the field of technology. I possess a strong foundation in programming languages and an eagerness to tackle complex problems. I thrive in a team environment, where I can utilise my skills to develop and bring together innovative projects. I am a dedicated self-starter who is not afraid to step out of my comfort zone in order to learn and grow.</p>
-        <div class="clearfix"></div>
-    </section>
-    <section id="projects">
-        <h2>Recent Projects:</h2>
-        <ul>
-            <li><strong>Caching API</strong> - In this project, I implemented caching for an API to improve performance and reduce server load. Using Postman, I developed and tested the caching strategy by setting appropriate cache headers and validating the behavior with multiple requests.</li>
-            <br>
-            <li><strong>API Auth Types</strong> - This project involved the implementation and testing of different authentication mechanisms using Postman. I explored and configured multiple authentication types to secure API endpoints.</li>
-            <br>
-            <li><strong>User interface for a Burger Shop</strong> - This project I Developed and implemented a user interface for Burger Shop, enabling customers to place custom orders for hamburgers.</li>
-            <br>
-            <li><strong>Hotel Reservation Schema</strong> - This project I Developed a flexible relational database for Hotel Software Guild, a resort hotel with three floors of rooms, including large suites and standard-sized rooms.</li>
+  <!--NAV-->
+  <nav>
+    <a href="#hero" class="nav-logo">Carlos Goncalves</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:carloshmego@hotmail.com" class="btn btn-primary" style="font-size:0.82rem;padding:8px 18px;">Hire Me</a>
+  </nav>
 
-        </ul>
-    </section>
-    <section id="experience">
-        <h2>Work Experience:</h2>
-        <sh1>APG E-Commerce - Internship - April 2024 - June 2024</sh1>
-        <ul>
-            <li>Created and managed comprehensive API test suites to ensure robust and reliable API functionality.</li>
-            <li>Applied hashing algorithms for data integrity and security.</li>
-            <li>Implemented caching strategies to enhance application performance.</li>
-            <li>Worked on various projects that enhanced my understanding of object-oriented programming principles and best practices in C#.</li>
-        </ul>
-        <sh1>Zara - Delivery Team Leader - April 2024 - Present</sh1>
-        <ul>
-            <li>Oversee and manage the daily operations of the delivery team, ensuring all members are performing their duties efficiently and effectively.</li>
-            <li>Coordinate with the inventory and logistics teams to ensure accurate inventory levels and efficient product distribution.</li>
-            <li>Track and assess the performance of delivery team members, providing feedback and conducting performance reviews.</li>
-            <li>Foster a positive and productive work environment, motivating team members and promoting teamwork and collaboration.</li>
-            <li>Prepare and submit regular reports on delivery operations, performance metrics, and any issues or improvements needed.</li>
-        </ul>
-        <sh1>Zara - Sales Assistant - October 2023 - April 2024</sh1>
-        <ul>
-            <li>Provide exceptional customer service by assisting customers with product inquiries, locating items, and processing transactions.</li>
-            <li>Maintain store appearance and cleanliness to ensure a pleasant shopping environment for customers.</li>
-            <li>Collaborate with team members to achieve sales targets and promote brand loyalty through effective communication and product knowledge.</li>
-            <li>Handle merchandise replenishment and organization to ensure optimal product availability and presentation on the sales floor.</li>
-            <li>Demonstrate flexibility and adaptability in performing various tasks, including cashier duties, fitting room assistance, and inventory management, as needed.</li>
-        </ul>
-        <sh1>Karate Society Treasurer - 2021-2022</sh1>
-        <ul>
-            <li>Planned and managed the budget.</li>
-            <li>Kept accurate records of all financial transactions made by the society.</li>
-            <li>Provided financial reports.</li>
-        </ul>
-        <sh1>Volunteer - Immersive Learning International Conference - 2021</sh1>
-        <ul>
-            <li>Interacted with international students attending within a 3D Immersive Environment.</li>
-            <li>Supported staff members in preparation for presentations.</li>
-            <li>Attended numerous conferences and presentations.</li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education:</h2>
-        <sh1>Sept 2019 - Jul 2022 - University of Westminster - BSc (1st Class Honours) in Digital Media Development</sh1>
-        <ul>
-            <li><strong>Key Modules:</strong> Advanced Client-Side Development, Advanced Interactive Media Development, Usability Testing, Server-Side Web Development, Android Mobile Application Development, iOS Mobile Application Development.</li>
-        </ul>
-        <sh1>Sept 2017 - June 2019 - A Levels</sh1>
-        <ul>
-            <li><strong>Key Modules:</strong> Media Studies, Psychology, Spanish, AS Level Portuguese.</li>
-        </ul>
-        <sh1>Sept 2015 - June 2017 - GCSEs</sh1>
-        <ul>
-            <li>8 GCSEs A*-C</li>
-        </ul>
-        <sh1>Certifications:</sh1>
-        <ul>
-            <li>CS50 (Harvard University Online)</li>
-            <li>C# Fundamentals (Pluralsight)</li>
-            <li>Postman 8 Fundamentals</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact:</h2>
-        <p><i class="fa fa-envelope" style="font-size:24px"></i> Email: <a href="mailto:carloshmego@hotmail.com" style="color: #ffffff;">carloshmego@hotmail.com</a></p>
-        <p><i class="fa fa-linkedin-square" style="font-size:24px"></i> LinkedIn: <a href="https://www.linkedin.com/in/carlos-goncalves-829b7a178/" style="color: #ffffff;">https://www.linkedin.com/in/carlos-goncalves-829b7a178/</a></p>
-    </section>
-    <footer>
-        <p>&copy; 2024 Carlos Henry Mendes Goncalves</p>
-    </footer>
+  <!--HERO-->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="greeting">Hi there, I'm</p>
+        <h1>Carlos<br /><span>Goncalves</span></h1>
+        <p class="role"><strong>Software Developer</strong> &amp; Digital Media Graduate</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Get in Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/carlos-goncalves-829b7a178/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:carloshmego@hotmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="hero-blob"></div>
+        <div class="hero-photo-placeholder">
+           <img src="me.jpeg" alt="Carlos Henry Mendes Goncalves">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ABOUT-->
+  <section id="about" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label">About Me</p>
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a First Class Honours graduate in Digital Media Development from the University of Westminster, with a strong foundation in full-stack development, cloud infrastructure, and data-driven applications.</p>
+          <p>I completed an internship at APG E-Commerce as an API Developer, where I worked on caching strategies, hashing algorithms, and C# backend systems. I'm passionate about writing clean, efficient code and building things that solve real problems.</p>
+          <p>Fluent in English, Spanish, and Portuguese — I thrive in collaborative, multicultural environments and am always looking for the next challenge.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="num">1st</div>
+            <div class="label">Class Honours</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">10+</div>
+            <div class="label">Languages & Frameworks</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">3</div>
+            <div class="label">Spoken Languages</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">3+</div>
+            <div class="label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--PROJECTS-->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="section-label">Portfolio</p>
+      <h2 class="section-title">Recent Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-wallet"></i></div>
+          <h3>Personal Finance Tracker</h3>
+          <p>Full-stack budgeting app where users can log income and expenses, set monthly budgets, and visualise spending via interactive dashboards. Built with a normalised MySQL schema and a React front-end.</p>
+          <div class="project-tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span><span class="tag">REST API</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>CI/CD Pipeline</h3>
+          <p>Containerised a Node.js app with Docker and built a Jenkins pipeline for automated build, test, and deployment to Azure App Service. Set up Grafana and Prometheus monitoring dashboards.</p>
+          <div class="project-tags">
+            <span class="tag">Docker</span><span class="tag">Jenkins</span><span class="tag">Azure</span><span class="tag">Grafana</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-store"></i></div>
+          <h3>E-Commerce Catalogue UI</h3>
+          <p>Responsive product catalogue with search, filtering, and a shopping cart. Wireframed in Figma, built with PHP/MySQL backend, and validated through usability testing with 5 participants.</p>
+          <div class="project-tags">
+            <span class="tag">HTML/CSS</span><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Hotel Reservation Schema</h3>
+          <p>Designed a flexible relational database for a resort hotel with three floors, including large suites and standard rooms. Focused on normalisation, indexing, and query efficiency.</p>
+          <div class="project-tags">
+            <span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Database Design</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Caching API</h3>
+          <p>Implemented caching for a REST API to improve performance and reduce server load. Developed and tested caching strategies using Postman, setting cache headers and validating behaviour.</p>
+          <div class="project-tags">
+            <span class="tag">C#</span><span class="tag">REST API</span><span class="tag">Postman</span><span class="tag">Caching</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-burger"></i></div>
+          <h3>Burger Shop UI</h3>
+          <p>Developed and implemented a user interface for a burger shop, enabling customers to build and place custom hamburger orders. Focused on intuitive UX and clean interaction design.</p>
+          <div class="project-tags">
+            <span class="tag">JavaScript</span><span class="tag">HTML/CSS</span><span class="tag">UX Design</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--EXPERIENCE-->
+  <section id="experience" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label">Career</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3>API Developer Intern</h3>
+                <div class="company">APG E-Commerce</div>
+              </div>
+              <span class="date">Apr 2024 – Jun 2024</span>
+            </div>
+            <ul>
+              <li>Built and managed comprehensive API test suites, reducing API-related issues by 35%.</li>
+              <li>Applied hashing algorithms to strengthen data integrity and security.</li>
+              <li>Implemented caching strategies that improved application performance by 20%.</li>
+              <li>Developed across multiple projects using C#, improving code efficiency by 15%.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-users"></i></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3>Delivery Team Leader</h3>
+                <div class="company">Zara</div>
+              </div>
+              <span class="date">Apr 2024 – Present</span>
+            </div>
+            <ul>
+              <li>Led a team of 5, conducting performance reviews that drove a 20% productivity improvement and 25% fewer operational issues.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-bag-shopping"></i></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3>Sales Assistant</h3>
+                <div class="company">Zara</div>
+              </div>
+              <span class="date">Oct 2023 – Apr 2024</span>
+            </div>
+            <ul>
+              <li>Assisted 200+ customers daily, achieving a 95% satisfaction score and contributing to a 10% monthly sales increase.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-star"></i></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3>Treasurer — Karate Society</h3>
+                <div class="company">University of Westminster</div>
+              </div>
+              <span class="date">2021 – 2022</span>
+            </div>
+            <ul>
+              <li>Managed the society budget, kept accurate records of all financial transactions, and provided regular financial reports.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-handshake"></i></div>
+          <div class="timeline-content">
+            <div class="job-header">
+              <div>
+                <h3>Volunteer</h3>
+                <div class="company">Immersive Learning International Conference</div>
+              </div>
+              <span class="date">2021</span>
+            </div>
+            <ul>
+              <li>Supported international attendees within a 3D immersive environment and assisted staff with conference presentations.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--EDUCATION-->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Academic Background</h2>
+      <div class="edu-grid">
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-date">Sept 2019 – Jul 2022</div>
+          <h3>BSc Digital Media Development</h3>
+          <div class="school">University of Westminster, London</div>
+          <div class="modules">Advanced Client-Side Dev, Advanced Interactive Media, Usability Testing, Server-Side Dev, Android &amp; iOS App Development.</div>
+          <span class="badge">1st Class Honours</span>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-date">Sept 2017 – Jun 2019</div>
+          <h3>A Levels</h3>
+          <div class="school">St Michaels Catholic College, London</div>
+          <div class="modules">Media Studies, Psychology, Spanish, AS Level Portuguese.</div>
+          <span class="badge">Grades: B, C, A, A</span>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="edu-date">Certifications</div>
+          <h3>Professional Certifications</h3>
+          <div class="modules">CS50 — Harvard University Online<br/>C# Fundamentals — Pluralsight<br/>Postman 8 Fundamentals</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SKILLS-->
+  <section id="skills" class="section section-alt">
+    <div class="section-inner">
+      <p class="section-label">Technical Skills</p>
+      <h2 class="section-title">What I Work With</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">C#</span>
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Swift</span>
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>DevOps &amp; Cloud</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">Jenkins</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">Grafana</span>
+            <span class="skill-pill">Prometheus</span>
+            <span class="skill-pill">Linux</span>
+            <span class="skill-pill">Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">MySQL Workbench</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Android Studio</span>
+            <span class="skill-pill">Xcode</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Unity</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Spoken Languages</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">🇬🇧 English (Native)</span>
+            <span class="skill-pill">🇪🇸 Spanish (Native)</span>
+            <span class="skill-pill">🇵🇹 Portuguese (Native)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACT-->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <p class="section-label">Contact</p>
+      <h2 class="section-title">Let's Work Together</h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <a href="mailto:carloshmego@hotmail.com" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-value">carloshmego@hotmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/carlos-goncalves-829b7a178/" target="_blank" class="contact-item">
+            <div class="contact-item-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <div class="ci-label">LinkedIn</div>
+              <div class="ci-value">carlos-goncalves-829b7a178</div>
+            </div>
+          </a>
+        </div>
+        <div class="contact-cta">
+          <h3>Open to new opportunities</h3>
+          <p>I'm actively looking for junior developer or data analyst roles. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
+          <a href="mailto:carloshmego@hotmail.com" class="btn btn-white"><i class="fa-solid fa-paper-plane"></i> Send an Email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer>
+    <p>&copy; 2026 <span>Carlos Henry Mendes Goncalves</span></p>
+  </footer>
+
 </body>
 </html>
